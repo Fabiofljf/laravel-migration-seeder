@@ -19,8 +19,22 @@
 
 <body>
     @section ('content')
-    
-    <h1>HEY che sballo!</h1>
+    <h1>Scegli una delle nostre destinazioni</h1>
+    <div class="container">
+        <div class="row">
+            @foreach ($travels as $travel)
+            <div class="col">
+                <div class="card text-start">
+                  <img class="card-img-top" src="{{$travel->image}}" alt="Title">
+                  <div class="card-body">
+                    <h4 class="card-title">{{$travel->location}}</h4>
+                    <p class="card-text">{{$travel->description}}</p>
+                  </div>
+                </div>
+            </div>
+            @endforeach
+        </div>
+    </div>
     @endsection
 </body>
 
