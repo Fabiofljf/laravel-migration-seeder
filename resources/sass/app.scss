@@ -1,5 +1,21 @@
 // - Importo bootstrap
 @use "bootstrap";
+// COMMON ROULES
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+// UTILITIES
+a {
+    text-decoration: none;
+}
+
 
 /* JUMBOTRON */
 
@@ -9,4 +25,11 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+
+/* DENTRO TRAVEL/INDEX */
+
+.img_size {
+    height: 400px;
 }

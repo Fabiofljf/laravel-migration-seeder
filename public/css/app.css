@@ -10228,6 +10228,20 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
 /* JUMBOTRON */
 #jumbotron {
   background-image: url("https://www.liutravel.it/wp-content/uploads/2022/02/polynesia-g8133ee130_1920.jpg");
@@ -10235,4 +10249,9 @@ textarea.form-control-lg {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+/* DENTRO TRAVEL/INDEX */
+.img_size {
+  height: 400px;
 }

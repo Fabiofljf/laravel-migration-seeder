@@ -17,4 +17,5 @@ use Illuminate\Support\Facades\Route;
 // - Rimandato a App/Http/Controllers
 Route::get('/', 'PageController@home')->name('index'); // - Percorso della home
 
-Route::get('/travel/list', 'TravelController@list')->name('travel.index'); // - Percorso della della lista dei viaggi
+Route::get('/travel/list', 'TravelController@list')->name('travel.index'); // - Percorso della lista dei viaggi
+Route::get('/travel/list/{travel}', 'TravelController@show')->name('travel.show'); // - Percorso singolo viaggio

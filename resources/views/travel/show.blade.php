@@ -19,22 +19,17 @@
 
 <body>
     @section ('content')
-    <h1>Scegli una delle nostre destinazioni</h1>
     <div class="container">
-        <div class="row row-cols-2 g-3">
-            @foreach ($travels as $travel)
+        <div class="row">
             <div class="col">
-                <a href="{{route('travel.show', $travel)}}">
-                    <div class="card text-start">
-                      <img class="card-img-top img_size" src="{{$travel->image}}" alt="Title">
-                      <div class="card-body">
+                <div class="card text-start">
+                    <img class="card-img-top" src="{{$travel->image}}" alt="Title">
+                    <div class="card-body">
                         <h4 class="card-title">{{$travel->location}}</h4>
                         <p class="card-text">{{$travel->description}}</p>
-                      </div>
-                </a>
+                    </div>
                 </div>
             </div>
-            @endforeach
         </div>
     </div>
     @endsection
